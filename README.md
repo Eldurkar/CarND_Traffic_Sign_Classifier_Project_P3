@@ -137,5 +137,5 @@ The model was able to correctly guess all of the 5 traffic signs.
 
 ### References
 The code in this project was adapted from the following sources:
-1. Lessons and videos that are part of the advanced lane finding project. 
+1. Lessons and videos that were covered for the traffic sign classifier project. 
 2. [Aymeric Damien](https://github.com/aymericdamien) and [Keisuke Shimokawa](https://github.com/KeisukeShimokawa)

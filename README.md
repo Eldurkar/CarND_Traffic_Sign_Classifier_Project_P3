@@ -134,3 +134,8 @@ The model was able to correctly guess all of the 5 traffic signs.
 #### 3. The top 5 softmax probabilities for each image along with the probabilities were visualized using a bar plot as shown below.
 
 ![Top 5 predictions](visualizations/Top5Preds.png)
+
+### References
+The code in this project was adapted from the following sources:
+1. Lessons and videos that are part of the advanced lane finding project. 
+2. [Aymeric Damien](https://github.com/aymericdamien) and [Keisuke Shimokawa](https://github.com/KeisukeShimokawa)

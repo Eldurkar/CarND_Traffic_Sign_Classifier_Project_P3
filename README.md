@@ -26,7 +26,9 @@ Create a convolutional neural network that trains on a set of traffic sign image
 
 #### 2. Exploratory visualization of the dataset
 
-Here is an exploratory visualization of the data set. A sample of about 20 images from the training examples was displayed to visualize the traffic signs.  The images were also visualized in grayscale.  
+Here is an exploratory visualization of the data set. A sample of about 20 images from the training examples was displayed to visualize the traffic signs.  The images were also visualized in grayscale. 
+
+![Samples from the training dataset](visualizations/TrainingDataSet.png) 
 
 Using Seaborn a countplot was plotted to display the classes and the count of samples for each class of the training data.  The histogram shows that some of the traffic signals are not adequately represented, having lesser than 200 test images vis-a-vis the maximum at approximately 2000 images. These traffic signals were augmented in the preprocessing stage.
 

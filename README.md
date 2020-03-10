@@ -1,6 +1,6 @@
 # **Traffic Sign Recognition** 
 
-**Note:** For more information, see the code in the [IPython notebook]() in this repo. Also available as [html]().
+**Note:** For more information, see the code in the [IPython notebook](https://github.com/Eldurkar/CarND_Traffic_Sign_Classifier_Project_P3/blob/master/Traffic_Sign_Classifier.ipynb) in this repo. Also available as [html](https://github.com/Eldurkar/CarND_Traffic_Sign_Classifier_Project_P3/blob/master/Traffic_Sign_Classifier.html).
 
 
 ---
@@ -30,7 +30,7 @@ Here is an exploratory visualization of the data set. A sample of about 20 image
 
 Using Seaborn a countplot was plotted to display the classes and the count of samples for each class of the training data.  The histogram shows that some of the traffic signals are not adequately represented, having lesser than 200 test images vis-a-vis the maximum at approximately 2000 images. These traffic signals were augmented in the preprocessing stage.
 
-![Training data distribution][visualizations/TrainingData.png]
+![Training data distribution](visualizations/TrainingData.png)
 
 ### Design and Test a Model Architecture
 
@@ -46,14 +46,14 @@ Preprocessing techniques used to sythesize image data for augmentation include:
 
 Here is an example of a traffic sign image before and after using a YUV enhancement technique to change the contrast of the image.
 
-![Before YUV enhancement][visualizations/Before_yuv.png]	![After YUV enhancement][visualizations/After_yuv.png]
+![Before YUV enhancement](visualizations/Before_yuv.png)	![After YUV enhancement](visualizations/After_yuv.png)
 
 **Data imbalance**
 A popular method to solve imbalance problem is data augmentation which increases the apparent number of samples in minority classes to balance between majority classes and minority classes by applying the geometric transformations or adding noise to training samples.
 
 The difference between the original data set and the augmented data set is the following - the under represented classes are now adequate in number, from the previous ratio of 1:9 to 2:3.
 
-![Data distribution after adding augmented images to training data][visualizations/AugmentedTrainingData.png]
+![Data distribution after adding augmented images to training data](visualizations/AugmentedTrainingData.png)
 
 **Normalization**
 The augmented data was then normalized using mean and standard deviation. The scale of the data has an effect on the magnitude of the gradient for the weights. If the gradient is big, the learning rate will need to be reduced. Normalizing the image to smaller pixel values is a cheap price to pay while making it easier to tune an optimal learning rate for input images.
@@ -110,8 +110,8 @@ Increasing the batch size from 128 to 256 improved the accuracy.
 
 #### 1. Here are five German traffic signs that were found on the web:
 
-![Image 1][visualizations/Ahead.png] ![Image 2][visualizations/RightofWayInt.png] ![Image 3][visualizations/PrioRoad.png] 
-![Image 4][visualizations/Yield.png] ![Image 5][visualizations/50kmph.png]
+![Image 1](visualizations/Ahead.png) ![Image 2](visualizations/RightofWayInt.png) ![Image 3](visualizations/PrioRoad.png) 
+![Image 4](visualizations/Yield.png) ![Image 5](visualizations/50kmph.png)
 
 The second image (Right of way at next intersection) might be difficult to classify because the black pattern within the red triangle is not clear.
 The fourth image (Yield) looks like there might be something more within the triangle.
@@ -131,4 +131,4 @@ The model was able to correctly guess all of the 5 traffic signs.
 
 #### 3. The top 5 softmax probabilities for each image along with the probabilities were visualized using a bar plot as shown below.
 
-![Top 5 predictions][visualizations/Top5Preds.png]
+![Top 5 predictions](visualizations/Top5Preds.png)
